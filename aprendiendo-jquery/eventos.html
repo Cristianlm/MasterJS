@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script> -->
-      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-      <script type="text/javascript" src="js/01-selectores.js"></script>
+    <title>Aprendiendo JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/02-eventos.js"></script>
+
+
     <style>
-    .zebra{
-        border: 5px dashed black;
-    }
-    .grande {
-        font-size:30px;
-    }
-    .margen-superior{
-        display: block;
-        margin-top:45px;
+        #caja {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background: yellow;
+            transition: 300ms all;
+        }
+
+        /* #caja:hover{
         
+        background: red;
+        cursor:pointer;
     }
-    .resaltado{
-        border-bottom: 2px solid brown;
-    }
+     */
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            height: 50px;
+            width: 250px;
+            margin-top:10px;
+            display:none;
+        }
+        #sigueme {
+            width: 25px;
+            height: 25px;
+            position:absolute;
+            display: block;
+            background: yellow;
+            border: 3px solid black;
+            opacity: 0.3;
+            border-radius: 999px;
+        }
     </style>
-    <title>Aprendiendo Jquery</title>
+
 </head>
+
 <body>
-    <h1>Aprendiendo JQuery con Cristian López</h1>
+    <h1>Aprendiendo JQuery con Victor Robles- Eventos</h1>
 
-    <ul>
-       <li><a href="https://google.com" title="Google">Ir a google</a></li> 
-       <li><a href="https://facebook.com" title="Facebook">Ir a Facebook</a></li> 
-       
-    </ul>
 
-    <p>Ejercicios de JQuery</p>
-    <p id="rojo" class="zebra">Seguramente sea un párrafo rojo</p>
-    <p id="amarillo" class="sin_borde">Soy un párrafo amarillo</p>
-    <p id="verde"class="zebra">Quiero ser un parrafo verde</p>
-    <p class="sin_borde"> Que pasa macho</p>
-    <div id="caja">
-        <p>Hola soy una caja</p>
-        <ul>
-            <li>Elemento1</li>
-            <li class="resaltado">Elemento2</li>
-        </ul>
-        <span class="resaltado">Soy un span</span>
-    </div>
+    <div id="sigueme"></div>
+    <form action="">
+        <input type="text" id="nombre" />
+    </form>
+    <div id="datos"></div>
+
+    <br>
+
+    <div id="caja">Soy una caja</div>
+
+
 </body>
+
 </html>

@@ -1,3 +1,6 @@
+// primero Hay que comprobar si el documento está listo, para que esté todo ready. 
+//el $ siempre se refiere al objeto JQuery en general. $ => JQuery
+// dentro del parentesis () son los selectores.
 $(document).ready(function () {
 
     //Selector de ID
